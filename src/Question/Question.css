@@ -1,0 +1,169 @@
+:root{
+    --medium-font--:18px;
+    --qustion-font--:1.1vw;
+    --option-font--:18px;
+}
+
+form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    border-radius: 32px;
+}
+.btn-parent{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question-box{
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid;
+    padding: 20px;
+}
+.question{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+h2{
+    font-size: var(--qustion-font--);
+    line-height: 1;
+}
+.options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    /* gap: 20px; */
+    padding-right:20px ;
+}
+
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #30cfd0;
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+  content: "";
+  background-color: #30cfd0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+  font-size:var(--medium-font--);
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.op1,.op2{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    font-size: var(--option-font--);
+    line-height: 1.6;
+}
+.question-number{
+    font-size: var(--medium-font--);
+}
+.btn{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 16px;
+    border: 2px solid #30cfd0;
+    font-size:var(--medium-font--);
+    background: none;
+}
+
+.err{
+    color: red;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+    :root{
+        --medium-font--:18px;
+        --qustion-font--:1.15vw;
+        --option-font--:14px;
+    }
+}
+@media only screen and (max-width:992px) {
+    :root{
+        --medium-font--:15px;
+        --qustion-font--: 1.5vw;
+    }
+    .cyberpunk-checkbox{
+        width: 17px;
+        height: 17px;
+    }
+    form{
+        border-radius: 0px;
+    }
+}
+@media only screen and (max-width:800px) {
+    :root{
+        --qustion-font--:2vw;
+        --option-font--:2vw
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width:576px) {
+    :root{
+
+        --option-font--:2vw;
+    }
+    .cyberpunk-checkbox{
+        width: 14px;
+        height: 14px;
+    }
+    .cyberpunk-checkbox:before{
+        width: 7px;
+        height: 7px;
+    }
+}
+@media only screen and (max-width:490px) {
+    :root{
+        --medium-font--:11px;
+        --qustion-font--:1.9vw;
+        --option-font--:1.9vw;
+    }
+}

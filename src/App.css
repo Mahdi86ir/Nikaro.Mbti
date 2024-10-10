@@ -1,0 +1,21 @@
+@font-face {
+    font-family: iranYekan;
+    src: url(/src/assets/font/Qs_Iranyekan.ttf) format(ttf),
+    url(/src/assets/font/Qs_Iranyekan.eot) format(eot),
+    url(/src/assets/font/Qs_Iranyekan.woff2) format(woff2),
+    url(/src/assets/font/Qs_Iranyekan.woff2) format(woff);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: iranYekan;
+}
+body::-webkit-scrollbar{
+    background-color: #fafffd;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #004fa3;
+    border-radius: 5px;
+}
+

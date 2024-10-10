@@ -1,0 +1,1 @@
+export const gettingAccess = ()=> localStorage.getItem('token')
