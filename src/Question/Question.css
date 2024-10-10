@@ -171,14 +171,14 @@ h2{
         --qustion-font--:1.9vw;
         --option-font--:1.9vw;
     }
-}
-@media only screen and (max-width:320px) {
     .question-box{
         padding: 10px;
     }
     .options{
         padding: 0;
     }
+}
+@media only screen and (max-width:320px) {
     :root{
         --medium-font--:8px;
         --qustion-font--:1.9vw;
