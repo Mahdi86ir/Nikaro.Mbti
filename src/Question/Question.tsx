@@ -48,7 +48,7 @@ const QuestionTemple: React.FC<QuestionTempleProps> = ({id,dataFormulaOp1,dataFo
   return (
     <div>
       <div className="question">
-        <span className="question-number">.{id}</span>
+        <span className="question-number">{id}.</span>
         <h2>{question}</h2>
       </div>
       <div className="options">
